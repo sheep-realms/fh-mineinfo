@@ -38,7 +38,15 @@ function dateFormat(date){
         result=defyear+'-'+defmonth+'-'+defday; 
     } 
     return result; 
-}; 
+};
+
+function timeZero(value) {
+    if (value >= 10) {
+        return value;
+    } else {
+        return '0'+value;
+    }
+}
 
 String.prototype.replaceAll = function(s1,s2){ 
     return this.replace(new RegExp(s1,"gm"),s2); 
@@ -55,5 +63,5 @@ function convertToDate(expr){
 
 var fhTime = DateAdd("s", 39, DateAdd("n", 17, DateAdd("d", 13, DateAdd("m", 6, DateAdd("y",4,getZoneTime(6))))));
 
-$('.timer').html(fhTime.getFullYear()+"-"+fhTime.getMonth()+"-"+fhTime.getDay()+" "+fhTime.getHours()+":"+fhTime.getMinutes());
+$('.timer').html(fhTime.getFullYear()+"-"+timeZero(fhTime.getMonth())+"-"+timeZero(fhTime.getDay())+" "+timeZero(fhTime.getHours())+":"+timeZero(fhTime.getMinutes()));
 $('.timer-y').html(fhTime.getFullYear());
