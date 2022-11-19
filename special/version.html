@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>版本 - MineInfo</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/md5.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div id="banner">
+            <a class="icon-a" href="../index.html">
+                <div id="icon">Mine<span>Info</span></div>
+            </a>
+            <p class="banner-info">
+                <span class="timer">1970-1-1 8:00</span> | 
+                <span>您好，游客！</span> | 
+                <a href="../login.html" title="我们鼓励您登录，因为登陆后才能创建、编辑页面[alt-shift-o]" accesskey="o">登录</a> | 
+                <a href="../signin.html" title="建议您创建一个账户并登录，但这不是强制的">注册</a> |
+            </p>
+        </div>
+
+        <div id="content">
+        
+            <div id="nav">
+                <ul class="navlist">
+                    <li><a href="../page/personnel.html">人员档案</a></li>
+                    <li><a href="../page/organization.html">组织档案</a></li>
+                    <li><a href="../page/event.html">事件档案</a></li>
+                    <li><a href="../page/other.html">杂项档案</a></li>
+                </ul>
+            </div>
+
+            <div id="core">
+                <div id="sitenotice">
+                    <p>您正在访问MineInfo的镜像站，该镜像站的部分操作无法正常进行，如有需求请访问原始站点。</p>
+                </div>
+                <div class="article">
+                    <h1>版本</h1>
+
+                    <h2>MinediaWiki协议</h2>
+                    <p>本Wiki由MinediaWiki协议驱动，版权所有 © 2021-<span class="timer-y">2025</span> Obsidian Studio</p>
+                    <p>MinediaWiki是自由软件；您可以依据亚细亚数字协会发行的通用公共许可协议第3版或任意后续版本的条款，传播和/或修改本软件。</p>
+
+                    <h2>安装的软件</h2>
+                    <table class="mw-table">
+                        <tr>
+                            <th>产品</th>
+                            <th>版本</th>
+                        </tr>
+                        <tr>
+                            <td>MinediaWiki</td>
+                            <td>1.19.4</td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
+                            <td>undefined</td>
+                        </tr>
+                        <tr>
+                            <td>MySQL</td>
+                            <td>undefined</td>
+                        </tr>
+                    </table>
+
+                    <h2>已安装皮肤</h2>
+                    <table class="mw-table">
+                        <tr>
+                            <th>皮肤</th>
+                            <th>版本</th>
+                            <th>许可协议</th>
+                            <th>描述</th>
+                            <th>作者</th>
+                        </tr>
+                        <tr>
+                            <td><b>Vanilla</b></td>
+                            <td>–</td>
+                            <td>APL-3.0-or-later</td>
+                            <td>MinediaWiki的原始皮肤。</td>
+                            <td>Obsidian Studio</td>
+                        </tr>
+                        <tr>
+                            <td><b>MineInfo</b></td>
+                            <td>–</td>
+                            <td>APL-3.0-or-later</td>
+                            <td>适用于MineInfo的Wiki皮肤。</td>
+                            <td>God Realm</td>
+                        </tr>
+                    </table>
+
+                    <h2>安装的扩展程序</h2>
+                    <table class="mw-table">
+                        <tr>
+                            <th colspan="5">特殊页面</th>
+                        </tr>
+                        <tr>
+                            <th>扩展程序</th>
+                            <th>版本</th>
+                            <th>许可协议</th>
+                            <th>描述</th>
+                            <th>作者</th>
+                        </tr>
+                        <tr>
+                            <td><b>404</b></td>
+                            <td>1.0</td>
+                            <td>APL-3.0-or-later</td>
+                            <td>将访问到空页面的游客重定向到404页面。</td>
+                            <td>Dean Mysliwiec</td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">解析器钩</th>
+                        </tr>
+                        <tr>
+                            <th>扩展程序</th>
+                            <th>版本</th>
+                            <th>许可协议</th>
+                            <th>描述</th>
+                            <th>作者</th>
+                        </tr>
+                        <tr>
+                            <td><b>Cite</b></td>
+                            <td>–</td>
+                            <td>APL-3.0-or-later</td>
+                            <td>增加用于引用的&lt;ref[ name=id]&gt;和&lt;references/&gt;标签</td>
+                            <td>Hyman Levitan</td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">其他</th>
+                        </tr>
+                        <tr>
+                            <th>扩展程序</th>
+                            <th>版本</th>
+                            <th>许可协议</th>
+                            <th>描述</th>
+                            <th>作者</th>
+                        </tr>
+                        <tr>
+                            <td><b>MirroringClient</b></td>
+                            <td>1.9</td>
+                            <td>APL-3.0-or-later</td>
+                            <td>从主服务器接收镜像广播。</td>
+                            <td>Drew Crockette</td>
+                        </tr>
+                        <tr>
+                            <td><b>RemoveUserService</b></td>
+                            <td>1.45.1</td>
+                            <td>APL-3.0-or-later</td>
+                            <td>移除MinediaWiki原生用户服务，仅保留阅读功能。</td>
+                            <td>Carmelo Hatmaker和Dallas Dorsinville</td>
+                        </tr>
+                    </table>
+
+                    <h2>解析器扩展标签</h2>
+                    &lt;nowiki&gt;、&lt;pre&gt;、&lt;ref&gt;和&lt;references&gt;
+
+                    <h2>解析器函数钩</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="info">
+                <p>©God Realm 2021-<span class="timer-y">2025</span> | 上界镜像</p>
+                <p>本网站是基于Follen Homes的架空世界观所虚构的网站，切勿将网站上的内容代入现实</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

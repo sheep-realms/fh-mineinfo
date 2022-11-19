@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>模拟速率 - MineInfo</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/md5.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div id="banner">
+            <a class="icon-a" href="../index.html">
+                <div id="icon">Mine<span>Info</span></div>
+            </a>
+            <p class="banner-info">
+                <span class="timer">1970-1-1 8:00</span> | 
+                <span>您好，游客！</span> | 
+                <a href="../login.html" title="我们鼓励您登录，因为登陆后才能创建、编辑页面[alt-shift-o]" accesskey="o">登录</a> | 
+                <a href="signin.html" title="建议您创建一个账户并登录，但这不是强制的">注册</a> |-| 
+                <b title="查看内容页面[alt-shift-c]" accesskey="c">阅读</b> | 
+                <a href="talk.html" title="关于内容页面的讨论[alt-shift-t]" accesskey="t">讨论</a> | 
+                <a href="history.html" title="本页面过去的版本[alt-shift-h]" accesskey="h">历史</a> | 
+                <a href="edit.html" title="编辑本页[alt-shift-e]" accesskey="e">编辑</a> | 
+            </p>
+        </div>
+
+        <div id="content">
+        
+            <div id="nav">
+                <ul class="navlist">
+                    <li><a href="../page/personnel.html">人员档案</a></li>
+                    <li><a href="../page/organization.html">组织档案</a></li>
+                    <li><a href="../page/event.html">事件档案</a></li>
+                    <li><a href="../page/other.html">杂项档案</a></li>
+                </ul>
+            </div>
+
+            <div id="core">
+                <div id="sitenotice">
+                    <p>您正在访问MineInfo的镜像站，该镜像站的部分操作无法正常进行，如有需求请访问原始站点。</p>
+                </div>
+                <div class="article">
+                    <h1>模拟速率</h1>
+                    <p><b>模拟速率（Simulate Speed）</b>，在程序中简称“SLS”，是上界人对FH世界的模拟运算速度的配置参数。FH世界一切从零开始演算，而早期FH世界是荒芜的，为了加快模拟速度，上界人引入了这个概念。FH世界时间流速与上界时间流速之比极为模拟速率。从FH世界的2020年开始，模拟速率一直保持为1从未更改过。</p>
+
+                    <h2>具体细节</h2>
+                    <p>由于模拟速率的存在，使得FH世界与上界没有确切的时间映射关系。不过，通过<a href="skyland_war.html">天域之战</a>，FH世界的人类在与上界人的交流中成功获得了一些关键信息。自从2020年开始，模拟速率维持在1，这意味着从这一年开始FH世界的时间可以与上界形成映射关系。这一年，上界的对应时间为2094年，尚不清楚具体日期。另外，如果模拟速率不为1，以沉浸式登录进入FH世界的上界人将会被安全机制强制踢出。似乎也正是因为这种安全机制，模拟速率的访问权限被全局授权。</p>
+
+                    <p>在远古时期，模拟速率非常高，据不可靠猜测约在百万以上，直到出现人类文明，模拟速率才逐渐被下调。事实上，如此高的模拟速率会使运行模拟的载体产生过高的负荷，而这一行为在上界中持续了将近六个月的时间。因此为了减少维护成本，这段时期的模拟精度略有下调，这也产生了一些考古工作中出现的各种地质粗糙断层、异常的大面积空洞或大面积填充物质等非自然现象。</p>
+
+                    <p>此外，上界人尚未有人尝试过低于1的模拟速率。不过据历史日志推测，有部分AIO已经发现了这个特性并尝试破解，但都以失败告终。<a href="skyland_war.html">天域之战</a>后，上界人加固了系统防御，使得系统从内部攻破变得几乎不可能了。</p>
+
+                    <p>理论上，低于1的模拟速率会让上界人看起来FH世界在慢放，而如果设置为0，整个世界将会暂停运行。</p>
+
+                    <h2>技术元数据</h2>
+                    <table class="mw-table">
+                        <tr>
+                            <th>名称</th>
+                            <td>simulate_speed</td>
+                        </tr>
+                        <tr>
+                            <th>地址</th>
+                            <td>system.world</td>
+                        </tr>
+                        <tr>
+                            <th>数据类型</th>
+                            <td>long</td>
+                        </tr>
+                        <tr>
+                            <th>默认值</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>访问权限</th>
+                            <td>*</td>
+                        </tr>
+                        <tr>
+                            <th>写入权限</th>
+                            <td>sysadmin, security</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="info">
+                <p>©God Realm 2021-<span class="timer-y">2025</span> | 上界镜像</p>
+                <p>本网站是基于Follen Homes的架空世界观所虚构的网站，切勿将网站上的内容代入现实</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
